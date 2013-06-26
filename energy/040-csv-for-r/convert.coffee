@@ -24,7 +24,7 @@ outputFields = [
 ]
 
 inputFile = path.resolve __dirname, '../030-trimmed-csv/energy.csv'
-outputFile = path.resolve __dirname, '../040-csv-for-r/energy.csv'
+outputFile = path.resolve __dirname, './energy.csv'
 
 inputStream = csv()
 .from(inputFile, columns: shortFields)

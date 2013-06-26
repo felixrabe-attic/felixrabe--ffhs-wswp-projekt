@@ -1,0 +1,7 @@
+*
+!/.gitignore
+!/arbeit.Rnw
+!/README.md
+
+!/energy/040-csv-for-r/convert.coffee
+!/population/040-csv-for-r/convert.coffee

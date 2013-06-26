@@ -1,0 +1,127 @@
+<<echo=FALSE>>=
+library(xtable)
+
+esc <- function(s) {
+  s <- gsub("&", "\\\\&", s, fixed = TRUE)
+  s <- gsub("_", "\\\\_", s, fixed = TRUE)
+  s
+}
+@
+\documentclass[a4paper,11pt,fleqn]{article}
+\usepackage[ngerman]{babel}  % TODO: replace with polyglossia later
+\usepackage{fontspec}
+% Ligatures: http://tex.stackexchange.com/a/37856
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+\parskip 3pt
+\setlength{\parindent}{0pt}
+\pagestyle{headings}
+\usepackage{fullpage}
+\usepackage{hyperref}
+
+\title{Semesterarbeit WSWP, FFHS BSc INF 2011}
+\author{Felix Rabe}
+
+\usepackage[noae]{Sweave}
+\begin{document}
+
+\maketitle
+
+\tableofcontents % \\[2cm]
+
+\section{Thema}
+
+Diese Arbeit betrachtet Bevölkerungszahlen und Energieverbrauch mehrerer Länder im Zeitraum von 1965 bis 2010, inklusive.
+
+Dieses Thema ist interessant, weil unsere Ressourcen beschränkt sind, während unser Verbrauch weiterhin exponentiell zunimmt.
+
+
+\newpage
+
+\section{Daten}
+
+\subsection{Bevölkerungszahlen}
+
+\subsubsection{Quelle}
+
+<<echo=FALSE>>=
+colCls = c("character", "numeric", "numeric")
+
+pb <- read.csv("./population/040-csv-for-r/population-both.csv",
+  colClasses = colCls, na.strings = c("n/a"))
+
+(e[e$area == "US" & e$year == 2012, c("consumption")] / e[e$area == "US" & e$year == 2011, c("consumption")] - 1) * 100
+@
+
+Quelle: \url{http://esa.un.org/wpp/Excel-Data/population.htm} \Rightarrow ``Annual Population by Age Groups''. United Nations, Department of Economic and Social Affairs, Population Division (2013). World Population Prospects: The 2012 Revision, CD-ROM Edition.
+
+Unter \url{http://esa.un.org/wpp/index.htm} ist einsehbar, auf welchen Quellen die Bevölkerungszahlen im Detail beruhen.
+
+Beispiele, gerechnet auf Basis der Daten:
+
+
+<<echo=FALSE>>=
+pop_2010 =
+@
+
+Weltbevölkerung in 2000:
+
+
+<<echo=FALSE>>=
+
+@
+
+Weltbevölkerung in 2010:
+
+
+<<echo=FALSE>>=
+
+@
+
+Rein mathematischer jährlicher, exponentieller Zuwachs von 2000 zu 2010:
+
+
+\subsection{Energieverbrauch}
+
+\subsubsection{Quelle}
+
+Quelle: \url{http://www.bp.com/statisticalreview}
+
+<<echo=FALSE>>=
+colCls = c("character", "numeric", "numeric")
+
+e <- read.csv("./energy/040-csv-for-r/energy.csv",
+  colClasses = colCls, na.strings = c("n/a"))
+
+(e[e$area == "US" & e$year == 2012, c("consumption")] / e[e$area == "US" & e$year == 2011, c("consumption")] - 1) * 100
+@
+
+
+\newpage
+
+\section{Beschreibende Statistik}
+
+Analyse der Daten inkl. Tabellen und Grafiken.
+
+
+\newpage
+
+\section{Wahrscheinlichkeitsrechnung}
+
+
+\newpage
+
+\section{Schliessende Statistik}
+
+
+\newpage
+
+\section{Resultate und Schlussfolgerungen}
+
+
+\newpage
+
+\section{Anhang}
+
+Dieses Dokument wurde mit R erarbeitet: \Sexpr{esc(version$version.string)}, \Sexpr{esc(version$platform)}.
+
+\end{document}
