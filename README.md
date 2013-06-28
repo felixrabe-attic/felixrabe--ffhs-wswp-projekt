@@ -1,6 +1,14 @@
 TODO
 ====
 
+arbeit.Rnw
+----------
+
+- Document leap year
+  Google: statistics leap year correction
+  => http://epp.eurostat.ec.europa.eu/portal/page/portal/national_accounts/documents/quarterly_accounts/SAWD_RECOMMENDATIONS.PDF
+
+
 Population data
 ---------------
 
