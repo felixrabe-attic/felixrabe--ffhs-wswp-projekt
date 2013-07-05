@@ -1,0 +1,18 @@
+\usepackage[ngerman]{babel}  % TODO: replace with polyglossia later
+
+\usepackage{mathtools}
+
+\usepackage{fontspec}
+% Ligatures: http://tex.stackexchange.com/a/37856
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+
+\parskip 3pt
+\setlength{\parindent}{0pt}
+
+\pagestyle{headings}
+
+\usepackage{fullpage}
+
+\usepackage[colorlinks,urlcolor=blue,linkcolor=black]{hyperref}
+
+\usepackage{graphicx}

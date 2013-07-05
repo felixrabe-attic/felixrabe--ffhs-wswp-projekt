@@ -22,7 +22,7 @@ smaller_guide <- guide_legend(keywidth = 0.8, keyheight = 0.8)
 ggplot(pp, aes(year, color = age)) + geom_line(aes(y = population, linetype = sex)) + scale_color_discrete(limits = ages) + scale_y_continuous(label = f) + labs(x = 'Jahr', y = 'Bevölkerung in der Gruppe', linetype = 'Geschlecht', color = 'Altersgruppe') + guides(linetype = smaller_guide, color = smaller_guide) + scale_linetype_discrete(labels = c('weiblich', 'männlich'))
 @
 
-Beispiele, gerechnet auf Basis der Daten:
+\subsection{Beispiele, gerechnet auf Basis der Daten}
 
 
 <<echo=FALSE>>=

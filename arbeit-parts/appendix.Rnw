@@ -14,4 +14,4 @@ Quelle: \url{http://www.bp.com/statisticalreview}
 
 \subsection{Interna}
 
-Dieses Dokument wurde mit \LaTeX\, und R erarbeitet: \Sexpr{esc(version$version.string)}, \Sexpr{esc(version$platform)}.
+Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \Sexpr{esc(version$version.string)}, \Sexpr{esc(version$platform)}.  Installierte Pakete: AFLP, chron, colorspace, DBI, dichromat, digest, ggplot2, gsubfn, gtable, labeling, munsell, mvtnorm, permute, plyr, proto, pxR, RColorBrewer, reshape, reshape2, RH2, rJava, RJDBC, RMySQL, RPostgreSQL, RSQLite, RSQLite.extfuns, scales, seqinr, signal, sqldf, stringr, svUnit, vcd, vegan, xtable, zoo.
