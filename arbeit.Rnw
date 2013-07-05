@@ -1,12 +1,18 @@
 \documentclass[a4paper,11pt,fleqn]{article}
-\SweaveInput{arbeit-parts/packages.Rnw}
+
+<<'child-arbeit-parts/packages.Rnw', child='arbeit-parts/packages.Rnw'>>=
+@
+
 
 \title{Semesterarbeit WSWP, FFHS BSc INF 2011}
 \author{Felix Rabe}
 
-\usepackage[noae]{Sweave}
 
-\SweaveInput{arbeit-parts/setup.Rnw}
+
+
+<<'child-arbeit-parts/setup.Rnw', child='arbeit-parts/setup.Rnw'>>=
+@
+
 
 \begin{document}
 
@@ -16,27 +22,51 @@
 \tableofcontents % \\[2cm]
 
 \newpage
-\SweaveInput{arbeit-parts/topic.Rnw}
+
+<<'child-arbeit-parts/topic.Rnw', child='arbeit-parts/topic.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/population.Rnw}
+
+<<'child-arbeit-parts/population.Rnw', child='arbeit-parts/population.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/energy.Rnw}
+
+<<'child-arbeit-parts/energy.Rnw', child='arbeit-parts/energy.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/stat-d.Rnw}
+
+<<'child-arbeit-parts/stat-d.Rnw', child='arbeit-parts/stat-d.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/probability.Rnw}
+
+<<'child-arbeit-parts/probability.Rnw', child='arbeit-parts/probability.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/stat-m.Rnw}
+
+<<'child-arbeit-parts/stat-m.Rnw', child='arbeit-parts/stat-m.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/results.Rnw}
+
+<<'child-arbeit-parts/results.Rnw', child='arbeit-parts/results.Rnw'>>=
+@
+
 
 \newpage
-\SweaveInput{arbeit-parts/appendix.Rnw}
+
+<<'child-arbeit-parts/appendix.Rnw', child='arbeit-parts/appendix.Rnw'>>=
+@
+
 
 \end{document}
