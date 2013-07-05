@@ -1,18 +1,10 @@
 \documentclass[a4paper,11pt,fleqn]{article}
-
-<<'child-arbeit-parts/packages.Rnw', child='arbeit-parts/packages.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/packages')}
 
 \title{Semesterarbeit WSWP, FFHS BSc INF 2011}
 \author{Felix Rabe}
 
-
-
-
-<<'child-arbeit-parts/setup.Rnw', child='arbeit-parts/setup.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/setup')}
 
 \begin{document}
 
@@ -22,51 +14,27 @@
 \tableofcontents % \\[2cm]
 
 \newpage
-
-<<'child-arbeit-parts/topic.Rnw', child='arbeit-parts/topic.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/topic')}
 
 \newpage
-
-<<'child-arbeit-parts/population.Rnw', child='arbeit-parts/population.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/population')}
 
 \newpage
-
-<<'child-arbeit-parts/energy.Rnw', child='arbeit-parts/energy.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/energy')}
 
 \newpage
-
-<<'child-arbeit-parts/stat-d.Rnw', child='arbeit-parts/stat-d.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/stat-d')}
 
 \newpage
-
-<<'child-arbeit-parts/probability.Rnw', child='arbeit-parts/probability.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/probability')}
 
 \newpage
-
-<<'child-arbeit-parts/stat-m.Rnw', child='arbeit-parts/stat-m.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/stat-m')}
 
 \newpage
-
-<<'child-arbeit-parts/results.Rnw', child='arbeit-parts/results.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/results')}
 
 \newpage
-
-<<'child-arbeit-parts/appendix.Rnw', child='arbeit-parts/appendix.Rnw'>>=
-@
-
+\Sexpr{knit_child('arbeit-parts/appendix')}
 
 \end{document}
