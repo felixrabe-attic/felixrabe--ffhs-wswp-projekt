@@ -1,8 +1,14 @@
-/*
-!/.gitignore
-!/arbeit.Rnw
-!/arbeit-parts
-!/README.md
+.DS_Store
+.Rapp.history
 
-!/energy/040-csv-for-r/convert.coffee
-!/population/040-csv-for-r/convert.coffee
+/arbeit.*
+!/arbeit.Rnw
+/energy/010-original-downloads
+!/energy/010-original-downloads/*.bz2
+/energy/050-aux
+/figure
+/node_modules
+/old-2013-06-15
+/population/010-original-downloads
+!/population/010-original-downloads/*.bz2
+/population/050-aux

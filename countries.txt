@@ -1,0 +1,39 @@
+                 European Union
+                 Former Soviet Union
+                 Non-OECD
+China Hong Kong SAR
+  => China, Hong Kong SAR
+Iran
+  => Iran (Islamic Republic of)
+Other Africa
+Other Asia Pacific
+Other Europe & Eurasia
+Other Middle East
+Other S. & Cent. America
+Republic of Ireland
+  => Ireland
+South Korea
+  => Republic of Korea
+Taiwan
+  => -
+Total Africa
+  => AFRICA
+Total Asia Pacific
+  => ASIA
+Total Europe & Eurasia
+Total Middle East
+Total North America
+  => NORTHERN AMERICA
+Total S. & Cent. America
+  => LATIN AMERICA AND THE CARIBBEAN
+Total World
+  => WORLD
+Trinidad & Tobago
+  => Trinidad and Tobago
+US
+  => United States of America
+Venezuela
+  => Venezuela (Bolivarian Republic of)
+Vietnam
+  => Viet Nam
+of which: OECD
