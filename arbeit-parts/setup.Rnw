@@ -1,4 +1,4 @@
-<<echo=FALSE>>=
+<<echo=FALSE, message=FALSE, warning=FALSE>>=
 
 # setwd("/Users/fr/o/ffhs-wswp-projekt")
 
