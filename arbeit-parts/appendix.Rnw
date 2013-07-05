@@ -1,0 +1,17 @@
+\section{Anhang}
+
+\subsection{Quellen}
+
+\subsubsection{Bevölkerungszahlen}
+
+Quelle: \url{http://esa.un.org/wpp/Excel-Data/population.htm} \Rightarrow ``Annual Population by Age Groups''. United Nations, Department of Economic and Social Affairs, Population Division (2013). World Population Prospects: The 2012 Revision, CD-ROM Edition.
+
+Unter \url{http://esa.un.org/wpp/index.htm} ist einsehbar, auf welchen Quellen die Bevölkerungszahlen im Detail beruhen.
+
+\subsubsection{Energiekonsum}
+
+Quelle: \url{http://www.bp.com/statisticalreview}
+
+\subsection{Interna}
+
+Dieses Dokument wurde mit \LaTeX\, und R erarbeitet: \Sexpr{esc(version$version.string)}, \Sexpr{esc(version$platform)}.

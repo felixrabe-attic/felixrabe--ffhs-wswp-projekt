@@ -1,0 +1,5 @@
+\section{Thema}
+
+Diese Arbeit betrachtet Bevölkerungszahlen und Energiekonsum mehrerer Länder im Zeitraum von 1965 bis 2010, inklusive.
+
+Dieses Thema ist interessant, weil unsere Ressourcen beschränkt sind, während unser Verbrauch weiterhin exponentiell zunimmt.

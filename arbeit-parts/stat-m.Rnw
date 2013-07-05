@@ -1,0 +1,13 @@
+\section{Schliessende Statistik}
+
+
+\subsection{Problemstellung, Zufallsstichproben}
+
+
+\subsection{Punktschätzungen}
+
+
+\subsection{Intervallschätzungen}
+
+
+\subsection{Hypothesentests}

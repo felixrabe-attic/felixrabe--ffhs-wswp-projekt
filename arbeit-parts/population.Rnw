@@ -1,0 +1,50 @@
+\section{Bevölkerung}
+
+\subsection{Grafiken}
+
+<<echo=FALSE,fig=TRUE,height=4>>=
+ppsum <- ddply(p[p$area == 'WORLD', c('year', 'population')], .(year), colwise(sum))
+
+qplot(year, population, data = ppsum, geom = 'line') + scale_y_continuous(label = f) + labs(y = 'Weltbevölkerung', x = 'Jahr')
+@
+
+<<echo=FALSE,fig=TRUE,height=4,width=7>>=
+# pp <- ddply(p[p$area == 'WORLD', c('year', 'age', 'population')], c('year', 'age'), colwise(sum))
+
+pp <- ddply(p[p$area == 'WORLD', c('year', 'age', 'sex', 'population')], .(year, age), summarize, sex = sex, population = population, ratio = population / sum(population))
+
+# ppmale <- pp[pp$sex == 'male',]
+
+# qplot(year, age, data=ppmale, alpha = I(1/2), color = ratio, size = population) + scale_y_discrete(limits = ages) + scale_size_continuous(label = f) + labs(x = 'Jahr', y = 'Altersgruppe', size = 'Bevölkerung', color = 'Anteil männlich') + scale_color_continuous(label = percent)
+
+smaller_guide <- guide_legend(keywidth = 0.8, keyheight = 0.8)
+
+ggplot(pp, aes(year, color = age)) + geom_line(aes(y = population, linetype = sex)) + scale_color_discrete(limits = ages) + scale_y_continuous(label = f) + labs(x = 'Jahr', y = 'Bevölkerung in der Gruppe', linetype = 'Geschlecht', color = 'Altersgruppe') + guides(linetype = smaller_guide, color = smaller_guide) + scale_linetype_discrete(labels = c('weiblich', 'männlich'))
+@
+
+Beispiele, gerechnet auf Basis der Daten:
+
+
+<<echo=FALSE>>=
+
+p_2000 <- sum(p[p$area == "WORLD" & p$year == 2000, c("population")])
+
+p_2010 <- sum(p[p$area == "WORLD" & p$year == 2010, c("population")])
+
+p_2000_to_2010_yearly_growth <- ((p_2010 / p_2000) ^ (1/10) - 1) * 100
+
+@
+
+Weltbevölkerung in 2000: \Sexpr{esc(f(p_2000))}
+
+Weltbevölkerung in 2010: \Sexpr{esc(f(p_2010))}
+
+% Rein mathematischer jährlicher, exponentieller Zuwachs von 2000 zu 2010:
+
+Durchschnittliches jährliches Wachstum: \Sexpr{round(p_2000_to_2010_yearly_growth, 3)}\%
+
+Kontrolle:
+
+$$
+\Sexpr{round(p_2000)} \cdot ( \frac{\Sexpr{round(p_2000_to_2010_yearly_growth, 8)}}{100} + 1 )^{10} = \Sexpr{round(p_2000 * (p_2000_to_2010_yearly_growth/100 + 1) ^ 10)}
+$$
