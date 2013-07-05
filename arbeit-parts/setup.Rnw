@@ -21,8 +21,8 @@ library(plyr)
 library(scales)
 
 esc <- function(s) {
-  s <- gsub("&", "\\\\&", s, fixed = TRUE)
-  s <- gsub("_", "\\\\_", s, fixed = TRUE)
+  s <- gsub("&", "\\&", s, fixed = TRUE)
+  s <- gsub("_", "\\_", s, fixed = TRUE)
   s
 }
 
