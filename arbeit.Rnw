@@ -1,10 +1,10 @@
 \documentclass[a4paper,11pt,fleqn]{article}
-\Sexpr{knit_child('arbeit-parts/packages')}
+\Sexpr{knit_child('arbeit-parts/packages.Rnw')}
 
 \title{Semesterarbeit WSWP, FFHS BSc INF 2011}
 \author{Felix Rabe}
 
-\Sexpr{knit_child('arbeit-parts/setup')}
+\Sexpr{knit_child('arbeit-parts/setup.Rnw')}
 
 \begin{document}
 
@@ -14,27 +14,27 @@
 \tableofcontents % \\[2cm]
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/topic')}
+\Sexpr{knit_child('arbeit-parts/topic.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/population')}
+\Sexpr{knit_child('arbeit-parts/population.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/energy')}
+\Sexpr{knit_child('arbeit-parts/energy.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/stat-d')}
+\Sexpr{knit_child('arbeit-parts/stat-d.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/probability')}
+\Sexpr{knit_child('arbeit-parts/probability.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/stat-m')}
+\Sexpr{knit_child('arbeit-parts/stat-m.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/results')}
+\Sexpr{knit_child('arbeit-parts/results.Rnw')}
 
 \newpage
-\Sexpr{knit_child('arbeit-parts/appendix')}
+\Sexpr{knit_child('arbeit-parts/appendix.Rnw')}
 
 \end{document}
