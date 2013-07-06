@@ -14,7 +14,7 @@ population_total_plot
 xtable(head(population_total), caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
 @
 
-Im betrachteten Zeitraum, besonders seit 1980, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Man kann versuchen, die Daten mit einer Regressionsgeraden anzunähern:\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Die Jahre werden in dieser Arbeit vereinfachend als gleich lang angesehen. Korrekterweise müssten Schaltjahre berücksichtigt werden, und als x-Achse statt Jahre (mit Abstand 1) Tage (mit Abstand 365 oder 366) genommen werden.}
+Im betrachteten Zeitraum, besonders seit 1980, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Man kann versuchen, die Daten in den Jahren 1980 bis 2010 mit einer Regressionsgeraden von Jahr nach Weltbevölkerung anzunähern:\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Die Jahre werden in dieser Arbeit vereinfachend als gleich lang angesehen. Korrekterweise müssten Schaltjahre berücksichtigt werden, und als x-Achse statt Jahre (mit Abstand 1) Tage (mit Abstand 365 oder 366) genommen werden.}
 
 \begin{align*}
   y = a + bx \\
@@ -28,15 +28,21 @@ Zur Kontrolle lassen sich die beiden Überschneidungspunkte zwischen der Bevölk
 
 
 
-Eine Suche auf Google zeigt das Wachstum in einem längeren Zeitraum:
+Eine Suche auf Google zeigt das Wachstum in einem längeren Zeitraum:\footnote{Quelle: \url{http://ecache.ilbe.com/files/attach/new/20130615/377678/220411312/1412886170/ea09e52b28dc96677352e6e7d4aca053.jpg}, abgerufen 6. Juli 2013.}
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 
-<<echo=FALSE, fig.height=4, fig.width=7>>=
+\pagebreak[4]
+
+Eine Übersicht über die gesamte Entwicklung der Weltbevölkerung, aufgegliedert nach Altersgruppe und Geschlecht, lässt sich wie folgt darstellen:
+
+<<echo=FALSE, fig.height=4>>=
 source('./2120-population-by-age.R')
 
 population_by_age_plot
 @
+
+Man sieht daran sehr gut die ``Baby Booms'', die längere Lebenserwartung von Frauen gegenüber Männern, und wie wir in absehbarer Zeit ein echtes Problem mit der Altersvorsorge haben werden.
 
 \section{Beispiele, gerechnet auf Basis der Daten}
 
