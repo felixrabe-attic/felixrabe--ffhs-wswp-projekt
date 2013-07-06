@@ -11,7 +11,7 @@ population_total_plot
 @
 
 <<echo=FALSE, results='asis'>>=
-xtable(head(population_total), digits=0)
+xtable(head(population_total), caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
 @
 
 Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Mit der ``Methode der kleinsten Quadrate'' lässt sich die verwendete Regressionsgerade herleiten:
