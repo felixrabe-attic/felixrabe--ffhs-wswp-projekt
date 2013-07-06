@@ -35,9 +35,9 @@ p_2000_to_2010_yearly_growth <- ((p_2010 / p_2000) ^ (1/10) - 1) * 100
 
 @
 
-Weltbevölkerung in 2000: \Sexpr{esc(f(p_2000))}
+Weltbevölkerung in 2000: \Sexpr{f(p_2000)}
 
-Weltbevölkerung in 2010: \Sexpr{esc(f(p_2010))}
+Weltbevölkerung in 2010: \Sexpr{f(p_2010)}
 
 % Rein mathematischer jährlicher, exponentieller Zuwachs von 2000 zu 2010:
 

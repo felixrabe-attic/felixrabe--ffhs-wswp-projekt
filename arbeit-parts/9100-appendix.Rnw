@@ -14,4 +14,4 @@ Quelle: \url{http://www.bp.com/statisticalreview}
 
 \subsection{Interna}
 
-Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \Sexpr{esc(version$version.string)}, \Sexpr{esc(version$platform)}.  Installierte Pakete: ggplot2, knitr.
+Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \verb|\Sexpr{version$version.string}|, \verb|\Sexpr{version$platform}|.  Installierte Pakete: ggplot2, knitr.
