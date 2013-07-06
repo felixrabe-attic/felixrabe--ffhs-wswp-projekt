@@ -16,4 +16,4 @@ Quelle: \url{http://www.bp.com/statisticalreview}
 
 Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \verb|\Sexpr{version$version.string}|, \verb|\Sexpr{version$platform}|.
 
-Installierte R Pakete: ggplot2, knitr, xtable.
+Installierte R Pakete: ggplot2, knitr, reshape2, xtable.
