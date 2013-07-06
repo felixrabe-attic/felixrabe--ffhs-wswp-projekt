@@ -32,7 +32,7 @@ Eine Suche auf Google zeigt das Wachstum in einem längeren Zeitraum:\footnote{Q
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 
-\pagebreak[4]
+\pagebreak[4]  % http://tex.stackexchange.com/a/83493
 
 Eine Übersicht über die gesamte Entwicklung der Weltbevölkerung, aufgegliedert nach Altersgruppe und Geschlecht, lässt sich wie folgt darstellen:
 
