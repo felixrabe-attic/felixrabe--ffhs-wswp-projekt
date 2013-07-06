@@ -1,18 +1,29 @@
 TODO
 ====
 
-arbeit.Rnw
-----------
+Content
+-------
 
-- Document leap year
-  Google: statistics leap year correction
-  => http://epp.eurostat.ec.europa.eu/portal/page/portal/national_accounts/documents/quarterly_accounts/SAWD_RECOMMENDATIONS.PDF
+- Compare energy consumption per capita among various countries
+- Good histogram
+- Weitere Statistik/Wahrscheinlichkeitsdaten ansehen. (Sponan fällt mir
+    ein: Wie wahrscheinlich ist eine Person Amerikaner, wenn ihr
+    Pro-Kopf-Verbrauch X beträgt, im Vergleich mit dem Quotient
+    US-Pop/WORLD-Pop.)
+- Alternative world population graphs (google / images)
 
 
-Population data
----------------
+Keep in mind
+------------
 
-- "Pivot" like energy data, i.e.:
-  area,year,age,gender,population
+- Consider leap years
 
-- Assert that sum of "male" + "female" equals amount in "both".
+    Google: statistics leap year correction
+    => http://epp.eurostat.ec.europa.eu/portal/page/portal/national_accounts/documents/quarterly_accounts/SAWD_RECOMMENDATIONS.PDF
+
+
+Less important clean up tasks
+-----------------------------
+
+- Description for GitHub
+- Include build script (or "dump m")
