@@ -1,6 +1,8 @@
-\chapter{Bevölkerung}
+\chapter{Weltbevölkerung}
 
-\section{Grafiken}
+\section{Wachstum}
+
+Das Wachstum der Weltbevölkerung lässt sich grafisch folgendermassen darstellen:
 
 <<pop-total,echo=FALSE,fig.height=4>>=
 ppsum <- ddply(p[p$area == 'WORLD', c('year', 'population')], .(year), colwise(sum))

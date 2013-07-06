@@ -1,4 +1,4 @@
-\chapter*{Thema}
+\chapter{Einleitung}
 
 Diese Arbeit betrachtet Bevölkerungszahlen und Energiekonsum mehrerer Länder im Zeitraum von 1965 bis 2010, inklusive.
 
