@@ -1,8 +1,9 @@
 <<echo=FALSE, message=FALSE, warning=FALSE>>=
 
 source('./0210-setup-libraries.R')
+source('./0220-setup-functions.R')
 
-f <- function(x, ...) { format(x, ..., big.mark = "'", scientific = FALSE, trim = TRUE) }
+theme_set(theme_bw())
 
 # setwd('/Users/fr/o/ffhs-wswp-projekt/arbeit-parts')
 
