@@ -1,8 +1,8 @@
 \documentclass[a4paper,11pt,fleqn]{report}
 \Sexpr{knit_child('arbeit-parts/0100-latex-packages.Rnw')}
 
-\title{Semesterarbeit WSWP, FFHS BSc INF 2011}
-\subtitle{Bevölkerung und Energie}
+\title{Bevölkerung und Energie}
+\subtitle{Semesterarbeit WSWP, FFHS BSc INF 2011}
 \author{Felix Rabe}
 
 \Sexpr{knit_child('arbeit-parts/0200-r-setup.Rnw')}
