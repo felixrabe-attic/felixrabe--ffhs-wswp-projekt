@@ -10,7 +10,7 @@ Content
     ein: Wie wahrscheinlich ist eine Person Amerikaner, wenn ihr
     Pro-Kopf-Verbrauch X beträgt, im Vergleich mit dem Quotient
     US-Pop/WORLD-Pop.)
-- Alternative world population graphs (google / images)
+- Alternative world population graphs for comparison (google / images) because my graph does not look exponential at all
 
 
 Keep in mind
