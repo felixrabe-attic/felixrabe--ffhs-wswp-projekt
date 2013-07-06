@@ -1,5 +1,6 @@
 .DS_Store
 .Rapp.history
+.~lock.*
 
 /arbeit.*
 !/arbeit.Rnw
