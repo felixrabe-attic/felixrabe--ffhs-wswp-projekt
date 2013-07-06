@@ -1,5 +1,6 @@
 \section{Energiekonsum}
 
 <<energy-consumption>>=
-(e[e$area == 'US' & e$year == 2012, c('consumption')] / e[e$area == 'US' & e$year == 2011, c('consumption')] - 1) * 100
+e_us <- e[e$area == 'United States of America',]
+(e_us[e$year == 2012, c('consumption')] / e_us[e$year == 2011, c('consumption')] - 1) * 100
 @
