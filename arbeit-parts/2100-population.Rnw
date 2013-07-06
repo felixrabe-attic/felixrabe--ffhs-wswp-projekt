@@ -25,7 +25,7 @@ Eine Suche auf Google zeigt das Wachstum in einem grösseren Zeitraum:
 <<echo=FALSE,fig.height=4,fig.width=7>>=
 source('./2120-population-by-age.R')
 
-ggplot(pp, aes(year, color = age)) + geom_line(aes(y = population, linetype = sex)) + scale_color_discrete(limits = ages) + scale_y_continuous(label = f) + labs(x = 'Jahr', y = 'Bevölkerung in der Gruppe', linetype = 'Geschlecht', color = 'Altersgruppe') + guides(linetype = smaller_guide, color = smaller_guide) + scale_linetype_discrete(labels = c('weiblich', 'männlich'))
+population_by_age_plot
 @
 
 \section{Beispiele, gerechnet auf Basis der Daten}
