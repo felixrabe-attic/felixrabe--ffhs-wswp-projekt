@@ -1,1 +1,1 @@
-\section{Resultate und Schlussfolgerungen}
+\chapter{Resultate und Schlussfolgerungen}

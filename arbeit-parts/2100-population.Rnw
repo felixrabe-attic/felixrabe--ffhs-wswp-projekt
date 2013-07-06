@@ -1,6 +1,6 @@
-\section{Bevölkerung}
+\chapter{Bevölkerung}
 
-\subsection{Grafiken}
+\section{Grafiken}
 
 <<pop-total,echo=FALSE,fig.height=4>>=
 ppsum <- ddply(p[p$area == 'WORLD', c('year', 'population')], .(year), colwise(sum))
@@ -22,7 +22,7 @@ smaller_guide <- guide_legend(keywidth = 0.8, keyheight = 0.8)
 ggplot(pp, aes(year, color = age)) + geom_line(aes(y = population, linetype = sex)) + scale_color_discrete(limits = ages) + scale_y_continuous(label = f) + labs(x = 'Jahr', y = 'Bevölkerung in der Gruppe', linetype = 'Geschlecht', color = 'Altersgruppe') + guides(linetype = smaller_guide, color = smaller_guide) + scale_linetype_discrete(labels = c('weiblich', 'männlich'))
 @
 
-\subsection{Beispiele, gerechnet auf Basis der Daten}
+\section{Beispiele, gerechnet auf Basis der Daten}
 
 
 <<echo=FALSE>>=

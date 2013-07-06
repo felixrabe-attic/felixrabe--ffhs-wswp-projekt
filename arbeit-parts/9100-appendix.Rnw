@@ -1,18 +1,18 @@
-\section{Anhang}
+\chapter{Anhang}
 
-\subsection{Quellen}
+\section{Quellen}
 
-\subsubsection{Bevölkerungszahlen}
+\subsection{Bevölkerungszahlen}
 
 Quelle: \url{http://esa.un.org/wpp/Excel-Data/population.htm} \Rightarrow ``Annual Population by Age Groups''. United Nations, Department of Economic and Social Affairs, Population Division (2013). World Population Prospects: The 2012 Revision, CD-ROM Edition.
 
 Unter \url{http://esa.un.org/wpp/index.htm} ist einsehbar, auf welchen Quellen die Bevölkerungszahlen im Detail beruhen.
 
-\subsubsection{Energiekonsum}
+\subsection{Energiekonsum}
 
 Quelle: \url{http://www.bp.com/statisticalreview}
 
-\subsection{Interna}
+\section{Interna}
 
 Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \verb|\Sexpr{version$version.string}|, \verb|\Sexpr{version$platform}|.
 
