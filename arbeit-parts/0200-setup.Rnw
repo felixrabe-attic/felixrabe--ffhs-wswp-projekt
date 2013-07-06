@@ -1,10 +1,6 @@
 <<echo=FALSE, message=FALSE, warning=FALSE>>=
 
-library(ggplot2)
-theme_set(theme_bw())
-library(xtable)
-library(plyr)
-library(scales)
+source('./0210-setup-libraries.R')
 
 f <- function(x, ...) { format(x, ..., big.mark = "'", scientific = FALSE, trim = TRUE) }
 
