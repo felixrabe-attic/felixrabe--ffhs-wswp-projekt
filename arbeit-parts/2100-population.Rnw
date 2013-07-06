@@ -11,7 +11,7 @@ population_total_plot
 @
 
 <<echo=FALSE, results='asis'>>=
-xtable(head(population_total), caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
+xtable(population_total_table, caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
 @
 
 \pagebreak[1]
