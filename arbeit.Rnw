@@ -4,7 +4,7 @@
 \title{Semesterarbeit WSWP, FFHS BSc INF 2011}
 \author{Felix Rabe}
 
-\Sexpr{knit_child('arbeit-parts/0200-setup.Rnw')}
+\Sexpr{knit_child('arbeit-parts/0200-r-setup.Rnw')}
 
 \begin{document}
 

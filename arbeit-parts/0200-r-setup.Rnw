@@ -1,0 +1,6 @@
+<<echo=FALSE, message=FALSE, warning=FALSE>>=
+
+IN_KNITR <- TRUE
+source('./0200-r-setup.R')
+
+@

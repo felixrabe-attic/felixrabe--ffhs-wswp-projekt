@@ -1,17 +1,3 @@
-<<echo=FALSE, message=FALSE, warning=FALSE>>=
-
-source('./0210-setup-libraries.R')
-source('./0220-setup-functions.R')
-
-theme_set(theme_bw())
-
-# setwd('/Users/fr/o/ffhs-wswp-projekt/arbeit-parts')
-
-p <- read.csv('../population/040-csv-for-r/population.csv',
-  colClasses = c('factor', 'integer', 'factor', 'factor', 'numeric'))
-
-p <- data.frame(area = p$area, year = p$year, age = p$age, sex = p$sex, population = p$population * 1000)
-
 e <- read.csv('../energy/040-csv-for-r/energy.csv',
   colClasses = c('factor', 'numeric', 'numeric'), na.strings = c('n/a'))
 
@@ -33,10 +19,3 @@ levels(e$area)[which(areas == 'Trinidad & Tobago')]   <- 'Trinidad and Tobago'
 levels(e$area)[which(areas == 'US')]                  <- 'United States of America'
 levels(e$area)[which(areas == 'Venezuela')]           <- 'Venezuela (Bolivarian Republic of)'
 levels(e$area)[which(areas == 'Vietnam')]             <- 'Viet Nam'
-
-
-ages <- c('0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80+')
-
-# attributes(e$area)$levels
-
-@
