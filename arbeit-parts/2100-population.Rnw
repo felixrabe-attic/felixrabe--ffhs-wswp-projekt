@@ -14,7 +14,7 @@ population_total_plot
 xtable(head(population_total), caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
 @
 
-Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Mit der ``Methode der kleinsten Quadrate'' lässt sich die verwendete Regressionsgerade herleiten:
+Im betrachteten Zeitraum, besonders seit 1980, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Man kann versuchen, die Daten mit einer Regressionsgeraden anzunähern:\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Die Jahre werden in dieser Arbeit vereinfachend als gleich lang angesehen. Korrekterweise müssten Schaltjahre berücksichtigt werden, und als x-Achse statt Jahre (mit Abstand 1) Tage (mit Abstand 365 oder 366) genommen werden.}
 
 \begin{align*}
   y = a + bx \\
