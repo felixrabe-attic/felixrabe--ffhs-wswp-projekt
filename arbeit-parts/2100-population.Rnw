@@ -7,10 +7,12 @@ Das Wachstum der Weltbevölkerung lässt sich aufgrund der verwendeten Daten gra
 <<echo=FALSE,fig.height=4>>=
 source('./2110-population-total.R')
 
-ggplot(ppsum, aes(year, population, color = type)) + geom_line() + scale_y_continuous(label = f, lim = c(0, 8000000000)) + labs(y = 'Weltbevölkerung', x = 'Jahr')
+ggplot(ppsum, aes(year, population)) + geom_line() + geom_smooth(method = 'lm') + scale_y_continuous(label = f, lim = c(0, 8000000000)) + labs(y = 'Weltbevölkerung', x = 'Jahr')
 @
 
-Im betrachteten Zeitraum ist ein ungefähr lineares Wachstum erkennbar. Eine Suche auf Google zeigt den breiteren Kontext:
+\newpage
+
+Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Eine Suche auf Google zeigt den breiteren Kontext:
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 

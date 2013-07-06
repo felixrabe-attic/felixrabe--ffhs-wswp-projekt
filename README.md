@@ -4,6 +4,7 @@ TODO
 Content
 -------
 
+- Actually calculate linear regression for total population graph
 - Compare energy consumption per capita among various countries
 - Good histogram
 - Weitere Statistik/Wahrscheinlichkeitsdaten ansehen. (Sponan fällt mir
