@@ -1,6 +1,6 @@
 <<echo=FALSE, message=FALSE, warning=FALSE>>=
 
-# setwd("/Users/fr/o/ffhs-wswp-projekt")
+# setwd("/Users/fr/o/ffhs-wswp-projekt/arbeit-parts")
 
 p <- read.csv("../population/040-csv-for-r/population.csv",
   colClasses = c("factor", "integer", "factor", "factor", "numeric"))
