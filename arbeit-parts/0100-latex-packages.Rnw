@@ -1,5 +1,14 @@
 \usepackage[ngerman]{babel}  % TODO: replace with polyglossia later
 
+% http://tex.stackexchange.com/a/50186
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
 \usepackage{mathtools}
 
 \usepackage{fontspec}
