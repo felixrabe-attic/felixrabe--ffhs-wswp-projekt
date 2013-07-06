@@ -9,8 +9,8 @@
 \begin{document}
 
 \maketitle
+\Sexpr{knit_child('arbeit-parts/1100-topic.Rnw')}
 \newpage \tableofcontents % \\[2cm]
-\newpage \Sexpr{knit_child('arbeit-parts/1100-topic.Rnw')}
 \newpage \Sexpr{knit_child('arbeit-parts/2100-population.Rnw')}
 \newpage \Sexpr{knit_child('arbeit-parts/3100-energy.Rnw')}
 \newpage \Sexpr{knit_child('arbeit-parts/4100-stat-d.Rnw')}
