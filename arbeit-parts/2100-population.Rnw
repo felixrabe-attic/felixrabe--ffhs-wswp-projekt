@@ -7,12 +7,18 @@ Das Wachstum der Weltbevölkerung lässt sich aufgrund der verwendeten Daten gra
 <<echo=FALSE,fig.height=4>>=
 source('./2110-population-total.R')
 
-ggplot(ppsum, aes(year, population)) + geom_line() + geom_smooth(method = 'lm') + scale_y_continuous(label = f, lim = c(0, 8000000000)) + labs(y = 'Weltbevölkerung', x = 'Jahr')
+population_total_plot
 @
+
+Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Folgendermassen lässt sich die verwendete Regressionsgerade herleiten:
+
+
+
+Zur Kontrolle lassen sich die beiden Überschneidungspunkte zwischen der Bevölkerungskurve und der Regressionsgeraden bestimmen: ...
 
 \newpage
 
-Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Eine Suche auf Google zeigt den breiteren Kontext:
+Eine Suche auf Google zeigt das Wachstum in einem grösseren Zeitraum:
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 
