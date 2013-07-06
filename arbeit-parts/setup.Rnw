@@ -10,6 +10,26 @@ p <- data.frame(area = p$area, year = p$year, age = p$age, sex = p$sex, populati
 e <- read.csv('../energy/040-csv-for-r/energy.csv',
   colClasses = c('factor', 'numeric', 'numeric'), na.strings = c('n/a'))
 
+
+# Recode countries:
+# Does not work: e$area[e$area == 'country old'] <- 'country new'  # R in Action, p.77
+# Solution: http://stackoverflow.com/a/13045045/1034080
+
+areas = levels(e$area)
+
+levels(e$area)[which(areas == 'China Hong Kong SAR')] <- 'China, Hong Kong SAR'
+levels(e$area)[which(areas == 'Iran')]                <- 'Iran (Islamic Republic of)'
+levels(e$area)[which(areas == 'Republic of Ireland')] <- 'Ireland'
+levels(e$area)[which(areas == 'South Korea')]         <- 'Republic of Korea'
+levels(e$area)[which(areas == 'Total Africa')]        <- 'AFRICA'
+levels(e$area)[which(areas == 'Total Asia Pacific')]  <- 'ASIA'
+levels(e$area)[which(areas == 'Total World')]         <- 'WORLD'
+levels(e$area)[which(areas == 'Trinidad & Tobago')]   <- 'Trinidad and Tobago'
+levels(e$area)[which(areas == 'US')]                  <- 'United States of America'
+levels(e$area)[which(areas == 'Venezuela')]           <- 'Venezuela (Bolivarian Republic of)'
+levels(e$area)[which(areas == 'Vietnam')]             <- 'Viet Nam'
+
+
 ages <- c('0-4', '5-9', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80+')
 
 # attributes(e$area)$levels
