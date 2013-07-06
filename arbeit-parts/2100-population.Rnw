@@ -4,25 +4,35 @@
 
 Das Wachstum der Weltbevölkerung lässt sich aufgrund der verwendeten Daten grafisch folgendermassen darstellen:
 
-<<echo=FALSE,fig.height=4>>=
+<<echo=FALSE, fig.height=4>>=
 source('./2110-population-total.R')
 
 population_total_plot
 @
 
-Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Folgendermassen lässt sich die verwendete Regressionsgerade herleiten:
+<<echo=FALSE, results='asis'>>=
+xtable(head(population_total), digits=0)
+@
+
+Im betrachteten Zeitraum, besonders ab 1980 ist ein ungefähr lineares Wachstum erkennbar. Mit der ``Methode der kleinsten Quadrate'' lässt sich die verwendete Regressionsgerade herleiten:
+
+\begin{align*}
+  y = a + bx \\
+  y - a - bx = 0 \\
+  \bar{y} - a - b\bar{x} = 0
+\end{align*}
 
 
 
 Zur Kontrolle lassen sich die beiden Überschneidungspunkte zwischen der Bevölkerungskurve und der Regressionsgeraden bestimmen: ...
 
-\newpage
 
-Eine Suche auf Google zeigt das Wachstum in einem grösseren Zeitraum:
+
+Eine Suche auf Google zeigt das Wachstum in einem längeren Zeitraum:
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 
-<<echo=FALSE,fig.height=4,fig.width=7>>=
+<<echo=FALSE, fig.height=4, fig.width=7>>=
 source('./2120-population-by-age.R')
 
 population_by_age_plot
