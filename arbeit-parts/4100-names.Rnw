@@ -4,7 +4,7 @@
 
 Die folgenden Auswertungen basieren auf den Nachnamen in den USA, die im Jahr 2000 mindestens 100 mal vorkamen.
 
-<<echo=FALSE, fig.height=5>>=
+<<echo=FALSE, results='asis'>>=
 source('./3110-names-top.R')
 
 print(names_top_table, include.rownames=FALSE)
