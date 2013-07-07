@@ -1,6 +1,6 @@
 \chapter{Energiekonsum}
 
-<<echo=FALSE, fig.height=4>>=
+<<echo=FALSE, fig.height=5>>=
 source('./3110-energy-us.R')
 
 pc_us_plot
