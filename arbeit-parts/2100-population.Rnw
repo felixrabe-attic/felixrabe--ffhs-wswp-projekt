@@ -31,11 +31,11 @@ Die Formel für den Korrelationskoeffizienten $r_{xy}$ lautet:
 Die dazu benötigten Werte, arithmetisches Mittel $\bar{x}$, arithmetisches Mittel $\bar{y}$, Standardabweichung $s_x$, Standardabweichung $s_y$, Kovarianz $s_{xy}$, haben die folgenden Definitionen und Werte:
 
 \begin{align*}
-  \bar{x} = \frac{1}{n} \sumin x_i
+  \bar{x} = \frac{1}{n} \sumin x_i = \Sexpr{population_total_table_mean_year}
 \end{align*}
 
 \begin{align*}
-  \bar{y} = \frac{1}{n} \sumin y_i
+  \bar{y} = \frac{1}{n} \sumin y_i = \Sexpr{population_total_table_mean_population}
 \end{align*}
 
 \begin{align*}
