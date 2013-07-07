@@ -16,7 +16,7 @@ xtable(population_total_table, caption='Ausschnitt der Weltbevölkerungszahlen, 
 
 \pagebreak[1]
 
-Im betrachteten Zeitraum, besonders seit 1980, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Um diese Behauptung zu überprüfen, können die Daten in den Jahren 1980 bis 2010 mit einer Regressionsgeraden von Jahr nach Weltbevölkerung angenähert werden.\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Die Jahre werden in dieser Arbeit vereinfachend als gleich lang angesehen. Korrekterweise müssten Schaltjahre berücksichtigt werden, und als x-Werte müssten Tage (Abstand 365 bzw. 366) statt Jahre (Abstand 1) genommen werden.}
+Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Um diese Behauptung zu überprüfen, können die Daten in den Jahren 1970 (inkl.) bis 2010 (exkl., ergibt 40 Beobachtungen) mit einer Regressionsgeraden von Jahr nach Weltbevölkerung angenähert werden.\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Vereinfachend wird in dieser Arbeit davon ausgegangen, dass die Jahre gleich lang sind. Korrekterweise müssten Schaltjahre berücksichtigt werden, z.B. indem als x-Werte Tage (Abstand 365 bzw. 366) statt Jahre (Abstand 1) verwendet werden.}
 
 \subsection{Regressionsrechnung}
 
