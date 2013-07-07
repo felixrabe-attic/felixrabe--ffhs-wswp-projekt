@@ -6,4 +6,7 @@ population_total_table <- population_total[population_total$year >= 1970 & popul
 
 population_total_table$population <- f(population_total_table$population)
 
+names(population_total_table)[1] <- 'Jahr'
+names(population_total_table)[2] <- 'Bevölkerung'
+
 population_total_xtable <- xtable(population_total_table, caption='Tabelle der ausgewerteten Beobachtungen, 1970 - 2009', label='population_total_table')

@@ -16,7 +16,7 @@ Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr linear
 
 \subsection{Korrelationsrechung}
 
-Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.\footnote{Die konkreten Werte, die für die folgenden Berechnungen verwendet werden, sind in Tabelle ~\vref{population_total_table} aufgelistet.}
+Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.\footnote{Die konkreten Werte, die für die folgenden Berechnungen verwendet werden, sind in Tabelle~\vref{population_total_table} aufgelistet.}
 
 <<echo=FALSE, results='asis'>>=
 print(population_total_xtable, include.rownames=FALSE)
