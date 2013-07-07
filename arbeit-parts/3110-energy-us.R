@@ -1,6 +1,6 @@
 e_us <- e[e$area == 'United States of America',]
 
-p_us <- ddply(p[p$area == 'United States of America', c('year', 'population')], .(year), colwise(sum))
+p_us <- ddply(p[p$area == 'United States of America' & p$year >= 1965, c('year', 'population')], .(year), colwise(sum))
 
 subs <- function(df) {
   subset(df, select = c(year, type, value))
@@ -13,6 +13,8 @@ pc_us <- rbind(
 )
 
 pp <- ggplot(pc_us, aes(year, value, color = type))
-pp <- pp + scale_y_continuous(lim = c(0, 4000))
-pp <- pp + labs(x = 'Jahr', y = 'Verbrauch in Mio. t Öläquivalenten')
+pp <- pp + geom_line()
+# pp <- pp + scale_y_continuous(lim = c(0, 4000))
+pp <- pp + labs(x = 'Jahr', y = 'Wert')
+pp <- pp + facet_grid(type ~ .)
 pp -> pc_us_plot
