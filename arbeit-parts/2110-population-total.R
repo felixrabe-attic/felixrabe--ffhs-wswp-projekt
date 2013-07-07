@@ -6,12 +6,14 @@ pp <- pp + scale_y_continuous(label = f, lim = c(0, 8000000000))
 pp <- pp + labs(y = 'Weltbevölkerung', x = 'Jahr')
 pp -> population_total_plot
 
+
 ptab <- pt[pt$year >= 1970 & pt$year < 2010,]
 n <- nrow(ptab)
 
-population_total_table_display <- transform(ptab, population = f(population))
-names(population_total_table_display) <- c('Jahr', 'Bevölkerung')
-population_total_xtable <- xtable(population_total_table_display, caption='Tabelle der Bevölkerungszahlen von 1970 bis 2009, die den Berechnungen zugrunde liegen.', label='population_total_table')
+ptab_display <- transform(ptab, population = f(population))
+names(ptab_display) <- c('Jahr', 'Bevölkerung')
+population_total_xtable <- xtable(ptab_display, caption='Tabelle der Bevölkerungszahlen von 1970 bis 2009, die den Berechnungen zugrunde liegen.', label='population_total_table')
+
 
 p_mean_year <- 1 / n * sum(ptab$year)
 aeq(p_mean_year, mean(ptab$year))
@@ -36,3 +38,22 @@ p_cov -> population_total_table_cov
 p_cor <- p_cov / (p_sd_year * p_sd_pop)
 aeq(p_cor, cor(ptab$year, ptab$population))
 p_cor -> population_total_table_cor
+
+
+p_reg_b <- p_cov / p_sd_year ^ 2
+p_reg_b -> population_total_table_reg_b
+
+p_reg_a <- p_mean_pop - p_reg_b * p_mean_year
+p_reg_a -> population_total_table_reg_a
+
+
+ptab_with_reg <- rbind(
+  transform(ptab, type = 'Bevölkerung'),
+  transform(ptab, population = p_reg_a + p_reg_b * year, type = 'Regressionsgerade')
+)
+
+pp <- ggplot(ptab_with_reg, aes(year, population, color = type))
+pp <- pp + geom_line()
+pp <- pp + scale_y_continuous(label = f, lim = c(0, 8000000000))
+pp <- pp + labs(y = 'Weltbevölkerung', x = 'Jahr', color = 'Typ')
+pp -> population_total_table_with_reg_plot

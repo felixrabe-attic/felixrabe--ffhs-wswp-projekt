@@ -12,7 +12,7 @@ population_total_plot
 
 \pagebreak[1]
 
-Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Um diese Behauptung zu überprüfen, können die Daten in den Jahren 1970 (inkl.) bis 2010 (exkl., ergibt 40 Beobachtungen) mit einer Regressionsgeraden von Jahr nach Weltbevölkerung angenähert werden.\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Vereinfachend wird in dieser Arbeit davon ausgegangen, dass die Jahre gleich lang sind. Korrekterweise müssten Schaltjahre berücksichtigt werden, z.B. indem als x-Werte Tage (Abstand 365 bzw. 366) statt Jahre (Abstand 1) verwendet werden.}
+Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Um diese Behauptung zu überprüfen, können die Daten in den Jahren 1970 (inkl.) bis 2010 (exkl., ergibt $n=40$ Beobachtungen) mit einer Regressionsgeraden von Jahr nach Weltbevölkerung angenähert werden.\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Vereinfachend wird in dieser Arbeit davon ausgegangen, dass die Jahre gleich lang sind. Korrekterweise müssten Schaltjahre berücksichtigt werden, z.B. indem als x-Werte Tage (Abstand 365 bzw. 366) statt Jahre (Abstand 1) verwendet werden.}
 
 \subsection{Korrelationsrechung}
 
@@ -55,24 +55,28 @@ Es wird im Folgenden die ``Methode der kleinsten Quadrate'' angewendet:
   & a\bar{x} + b\frac{1}{n} \sumin x_i^2 = \frac{1}{n} \sumin x_i y_i
 \end{align*}
 
-Resultate des aufgelösten Gleichungssystems für a und b:
+Resultate des aufgelösten Gleichungssystems für a und b, unter Verwendung der oben ermittelten Werte:
 
 \begin{align*}
-  & a = \bar{y} - b\bar{x} \\
-  & b = \frac{s_{xy}}{s_x^2}
+  & b = \frac{s_{xy}}{s_x^2} = \Sexpr{f(population_total_table_reg_b)} \\
+  & a = \bar{y} - b\bar{x} = \Sexpr{f(population_total_table_reg_a)}
 \end{align*}
 
+<<echo=FALSE, fig.height=4>>=
+population_total_table_with_reg_plot
+@
 
+Interessanterweise ist der Wert $a$ deutlich negativ. Das bedeutet, dass der y-Achsenabschnitt und damit die theoretische Weltbevölkerung im Jahr 0 negativ gewesen wäre, wenn sich das Wachstum der Bevölkerung linear entwickelt hätte. Das festgestellte lineare Wachstum ist jedoch eine rein lokale Beobachtung im angegebenen Zeitabschnitt. Im Folgenden noch eine Grafik zur historischen Entwicklung.
 
-Zur Kontrolle lassen sich die beiden Überschneidungspunkte zwischen der Bevölkerungskurve und der Regressionsgeraden bestimmen: ...
+\subsection{Längerer Abschnitt}
 
-
-
-Eine Suche auf Google zeigt das Wachstum in einem längeren Zeitraum:\footnote{Quelle: \url{http://ecache.ilbe.com/files/attach/new/20130615/377678/220411312/1412886170/ea09e52b28dc96677352e6e7d4aca053.jpg}, abgerufen 6. Juli 2013.}
+Eine Suche auf Google zeigt die Bevölkerungsentwicklung in einem längeren Zeitraum, mit teilweise exponentiellem Wachstum:\footnote{Quelle: \url{http://ecache.ilbe.com/files/attach/new/20130615/377678/220411312/1412886170/ea09e52b28dc96677352e6e7d4aca053.jpg}, abgerufen 6. Juli 2013.}
 
 \includegraphics[width=90mm]{./arbeit-parts/2115-population-demographic_change_global_population_150dpi_3_57881.jpg}
 
 \pagebreak[4]  % http://tex.stackexchange.com/a/83493
+
+\section{Altersverteilung}
 
 Eine Übersicht über die gesamte Entwicklung der Weltbevölkerung, aufgegliedert nach Altersgruppe und Geschlecht, lässt sich wie folgt darstellen:
 
