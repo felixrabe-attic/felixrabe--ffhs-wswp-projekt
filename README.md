@@ -13,7 +13,6 @@ Content
     Pro-Kopf-Verbrauch X beträgt, im Vergleich mit dem Quotient
     US-Pop/WORLD-Pop.)
 - Alternative world population graphs for comparison (google / images) because my graph does not look exponential at all
-- Refer to GitHub from PDF
 
 
 Keep in mind
