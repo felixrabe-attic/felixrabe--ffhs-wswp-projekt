@@ -31,23 +31,11 @@ Die Formel für den Korrelationskoeffizienten $r_{xy}$ lautet:
 Die dazu benötigten Werte, arithmetisches Mittel $\bar{x}$, arithmetisches Mittel $\bar{y}$, Standardabweichung $s_x$, Standardabweichung $s_y$, Kovarianz $s_{xy}$, haben die folgenden Definitionen und Werte:
 
 \begin{align*}
-  \bar{x} = \frac{1}{n} \sumin x_i = \Sexpr{population_total_table_mean_year}
-\end{align*}
-
-\begin{align*}
-  \bar{y} = \frac{1}{n} \sumin y_i = \Sexpr{f(population_total_table_mean_population)}
-\end{align*}
-
-\begin{align*}
-  s_x = \sqrt{\frac{1}{n - 1} \sumin (x_i - \bar{x})^2} = \Sexpr{population_total_table_sd_year}
-\end{align*}
-
-\begin{align*}
-  s_y = \sqrt{\frac{1}{n - 1} \sumin (y_i - \bar{y})^2} = \Sexpr{f(population_total_table_sd_population)}
-\end{align*}
-
-\begin{align*}
-  s_{xy} = \frac{1}{n - 1} \sumin (x_i - \bar{x})(y_i - \bar{y}) = \Sexpr{f(population_total_table_cov)}
+  \bar{x} &= \frac{1}{n} \sumin x_i = \Sexpr{population_total_table_mean_year} \\
+  \bar{y} &= \frac{1}{n} \sumin y_i = \Sexpr{f(population_total_table_mean_population)} \\
+  s_x &= \sqrt{\frac{1}{n - 1} \sumin (x_i - \bar{x})^2} = \Sexpr{population_total_table_sd_year} \\
+  s_y &= \sqrt{\frac{1}{n - 1} \sumin (y_i - \bar{y})^2} = \Sexpr{f(population_total_table_sd_population)} \\
+  s_{xy} &= \frac{1}{n - 1} \sumin (x_i - \bar{x})(y_i - \bar{y}) = \Sexpr{f(population_total_table_cov)}
 \end{align*}
 
 Daraus ergibt sich:
