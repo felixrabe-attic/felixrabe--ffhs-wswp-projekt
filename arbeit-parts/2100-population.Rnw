@@ -10,13 +10,17 @@ source('./2110-population-total.R')
 population_total_plot
 @
 
-<<echo=FALSE, results='asis'>>=
-xtable(population_total_table, caption='Ausschnitt der Weltbevölkerungszahlen, 1950 - 1955', digits=0)
-@
-
 \pagebreak[1]
 
 Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr lineares Wachstum abzuzeichnen. Um diese Behauptung zu überprüfen, können die Daten in den Jahren 1970 (inkl.) bis 2010 (exkl., ergibt 40 Beobachtungen) mit einer Regressionsgeraden von Jahr nach Weltbevölkerung angenähert werden.\footnote{Die Bevölkerungsdaten gelten jeweils per 1. Juli eines gegebenen Jahres. Vereinfachend wird in dieser Arbeit davon ausgegangen, dass die Jahre gleich lang sind. Korrekterweise müssten Schaltjahre berücksichtigt werden, z.B. indem als x-Werte Tage (Abstand 365 bzw. 366) statt Jahre (Abstand 1) verwendet werden.}
+
+\subsection{Korrelationsrechung}
+
+Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.
+
+<<echo=FALSE, results='asis'>>=
+print(xtable(population_total_table, caption='Tabelle der ausgewerteten Beobachtungen, 1970 - 2009', digits=0), include.rownames=FALSE)
+@
 
 \subsection{Regressionsrechnung}
 
