@@ -50,6 +50,14 @@ Die dazu benötigten Werte, arithmetisches Mittel $\bar{x}$, arithmetisches Mitt
   s_{xy} = \frac{1}{n - 1} \sumin (x_i - \bar{x})(y_i - \bar{y}) = \Sexpr{f(population_total_table_cov)}
 \end{align*}
 
+Daraus ergibt sich:
+
+\begin{align*}
+  r_{xy} = \frac{s_{xy}}{s_x s_y} = \Sexpr{population_total_table_cor}
+\end{align*}
+
+Das Resultat nahe bei +1 bedeutet, dass sich die Bevölkerungskurve praktisch auf einer Geraden mit positiver Steigung befindet.
+
 \subsection{Regressionsrechnung}
 
 Es wird im Folgenden die ``Methode der kleinsten Quadrate'' angewendet:

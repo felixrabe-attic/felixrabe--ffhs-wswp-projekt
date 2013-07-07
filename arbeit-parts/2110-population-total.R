@@ -32,3 +32,7 @@ p_sd_pop -> population_total_table_sd_population
 p_cov <- 1 / (n - 1) * sum((ptab$year - p_mean_year) * (ptab$population - p_mean_pop))
 aeq(p_cov, cov(ptab$year, ptab$population))
 p_cov -> population_total_table_cov
+
+p_cor <- p_cov / (p_sd_year * p_sd_pop)
+aeq(p_cor, cor(ptab$year, ptab$population))
+p_cor -> population_total_table_cor
