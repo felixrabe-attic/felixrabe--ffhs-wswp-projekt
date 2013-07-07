@@ -35,15 +35,15 @@ Die dazu benötigten Werte, arithmetisches Mittel $\bar{x}$, arithmetisches Mitt
 \end{align*}
 
 \begin{align*}
-  \bar{y} = \frac{1}{n} \sumin y_i = \Sexpr{population_total_table_mean_population}
+  \bar{y} = \frac{1}{n} \sumin y_i = \Sexpr{f(population_total_table_mean_population)}
 \end{align*}
 
 \begin{align*}
-  s_x = \sqrt{\sumin (x_i - \bar{x})^2}
+  s_x = \sqrt{\frac{1}{n - 1} \sumin (x_i - \bar{x})^2} = \Sexpr{population_total_table_sd_year}
 \end{align*}
 
 \begin{align*}
-  s_y = \sqrt{\sumin (y_i - \bar{y})^2}
+  s_y = \sqrt{\frac{1}{n - 1} \sumin (y_i - \bar{y})^2} = \Sexpr{f(population_total_table_sd_population)}
 \end{align*}
 
 \begin{align*}

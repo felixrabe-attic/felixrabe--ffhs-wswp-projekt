@@ -1,17 +1,30 @@
-population_total <- ddply(p[p$area == 'WORLD', c('year', 'population')], .(year), colwise(sum))
+pt <- ddply(p[p$area == 'WORLD', c('year', 'population')], .(year), colwise(sum))
 
-population_total_plot <- ggplot(population_total, aes(year, population)) + geom_line() + scale_y_continuous(label = f, lim = c(0, 8000000000)) + labs(y = 'Weltbevölkerung', x = 'Jahr')
+pp <- ggplot(pt, aes(year, population))
+pp <- pp + geom_line()
+pp <- pp + scale_y_continuous(label = f, lim = c(0, 8000000000))
+pp <- pp + labs(y = 'Weltbevölkerung', x = 'Jahr')
+pp -> population_total_plot
 
-population_total_table <- population_total[population_total$year >= 1970 & population_total$year < 2010,]
+ptab <- pt[pt$year >= 1970 & pt$year < 2010,]
+n <- nrow(ptab)
 
-population_total_table_display <- transform(population_total_table, population = f(population))
-
+population_total_table_display <- transform(ptab, population = f(population))
 names(population_total_table_display) <- c('Jahr', 'Bevölkerung')
-
 population_total_xtable <- xtable(population_total_table_display, caption='Tabelle der Bevölkerungszahlen von 1970 bis 2009, die den Berechnungen zugrunde liegen.', label='population_total_table')
 
-population_total_table_mean_year <- 1 / nrow(population_total_table) * sum(population_total_table$year)
-aeq(population_total_table_mean_year, mean(population_total_table$year))
+p_mean_year <- 1 / n * sum(ptab$year)
+aeq(p_mean_year, mean(ptab$year))
+p_mean_year -> population_total_table_mean_year
 
-population_total_table_mean_population <- 1 / nrow(population_total_table) * sum(population_total_table$population)
-aeq(population_total_table_mean_population, mean(population_total_table$population))
+p_mean_pop <- 1 / n * sum(ptab$population)
+aeq(p_mean_pop, mean(ptab$population))
+p_mean_pop -> population_total_table_mean_population
+
+p_sd_year <- sqrt(1 / (n - 1) * sum((ptab$year - p_mean_year) ^ 2))
+aeq(p_sd_year, sd(ptab$year))
+p_sd_year -> population_total_table_sd_year
+
+p_sd_pop <- sqrt(1 / (n - 1) * sum((ptab$population - p_mean_pop) ^ 2))
+aeq(p_sd_pop, sd(ptab$population))
+p_sd_pop -> population_total_table_sd_population
