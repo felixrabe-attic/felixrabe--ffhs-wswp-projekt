@@ -16,14 +16,38 @@ Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr linear
 
 \subsection{Korrelationsrechung}
 
-Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.\footnote{Die konkreten Werte, die für die folgenden Berechnungen verwendet werden, sind in Tabelle~\vref{population_total_table} aufgelistet.}
+Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.\footnote{Die konkreten Werte, die für die folgenden Berechnungen verwendet werden, sind in Tabelle~\vref{population_total_table} aufgelistet. Für $x$ wird das Jahr verwendet, für $y$ die Bevölkerung.}
 
 <<echo=FALSE, results='asis'>>=
 print(population_total_xtable, include.rownames=FALSE)
 @
 
+Die Formel für den Korrelationskoeffizienten $r_{xy}$ lautet:
+
 \begin{align*}
-  & r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sumin (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sumin (x_i - \bar{x})^2 \sumin (y_i - \bar{y})^2}}
+  r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sumin (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sumin (x_i - \bar{x})^2 \sumin (y_i - \bar{y})^2}}
+\end{align*}
+
+Die dazu benötigten Werte, arithmetisches Mittel $\bar{x}$, arithmetisches Mittel $\bar{y}$, Standardabweichung $s_x$, Standardabweichung $s_y$, Kovarianz $s_{xy}$, haben die folgenden Definitionen und Werte:
+
+\begin{align*}
+  \bar{x} = \frac{1}{n} \sumin x_i
+\end{align*}
+
+\begin{align*}
+  \bar{y} = \frac{1}{n} \sumin y_i
+\end{align*}
+
+\begin{align*}
+  s_x = \sqrt{\sumin (x_i - \bar{x})^2}
+\end{align*}
+
+\begin{align*}
+  s_y = \sqrt{\sumin (y_i - \bar{y})^2}
+\end{align*}
+
+\begin{align*}
+  s_{xy} = \sumin (x_i - \bar{x})(y_i - \bar{y})
 \end{align*}
 
 \subsection{Regressionsrechnung}
