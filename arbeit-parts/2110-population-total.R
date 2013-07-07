@@ -4,9 +4,8 @@ population_total_plot <- ggplot(population_total, aes(year, population)) + geom_
 
 population_total_table <- population_total[population_total$year >= 1970 & population_total$year < 2010,]
 
-population_total_table$population <- f(population_total_table$population)
+population_total_table_display <- transform(population_total_table, population = f(population))
 
-names(population_total_table)[1] <- 'Jahr'
-names(population_total_table)[2] <- 'Bevölkerung'
+names(population_total_table_display) <- c('Jahr', 'Bevölkerung')
 
-population_total_xtable <- xtable(population_total_table, caption='Tabelle der Bevölkerungszahlen von 1970 bis 2009, die den Berechnungen zugrunde liegen.', label='population_total_table')
+population_total_xtable <- xtable(population_total_table_display, caption='Tabelle der Bevölkerungszahlen von 1970 bis 2009, die den Berechnungen zugrunde liegen.', label='population_total_table')
