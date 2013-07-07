@@ -1,6 +1,7 @@
 \chapter{Energiekonsum}
 
-<<energy-consumption>>=
-e_us <- e[e$area == 'United States of America',]
-(e_us[e$year == 2012, c('consumption')] / e_us[e$year == 2011, c('consumption')] - 1) * 100
+<<echo=FALSE, fig.height=4>>=
+source('./3110-energy-us.R')
+
+pc_us_plot
 @
