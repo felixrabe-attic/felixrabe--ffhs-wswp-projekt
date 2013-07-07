@@ -14,14 +14,14 @@ pc_us <- rbind(
 
 types = levels(pc_us$type)
 
-levels(pc_us$type)[which(types == 'mtoe')]  <- 'Gesamtverbrauch in MTOE'
+levels(pc_us$type)[which(types == 'mtoe')]  <- 'Gesamt-V. MTOE'
 levels(pc_us$type)[which(types == 'pop')]   <- 'Bevölkerung'
-levels(pc_us$type)[which(types == 'toepc')] <- 'Pro-Kopf-Verbrauch in TOE'
+levels(pc_us$type)[which(types == 'toepc')] <- 'Pro-Kopf-V. TOE'
 
 
 pp <- ggplot(pc_us, aes(year, value))
 pp <- pp + geom_line()
-pp <- pp + labs(x = 'Jahr', y = 'Wert')
+pp <- pp + labs(x = 'Jahr', y = '')
 pp <- pp + facet_grid(type ~ ., scales = 'free')
 pp <- pp + scale_y_continuous(label = f)
 pp -> pc_us_plot

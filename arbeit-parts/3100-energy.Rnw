@@ -1,5 +1,7 @@
 \chapter{Energiekonsum}
 
+\section{USA}
+
 <<echo=FALSE, fig.height=5>>=
 source('./3110-energy-us.R')
 
