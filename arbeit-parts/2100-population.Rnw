@@ -22,13 +22,17 @@ Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusam
 print(population_total_xtable, include.rownames=FALSE)
 @
 
+\begin{align*}
+  & r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sumin (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sumin (x_i - \bar{x})^2 \sumin (y_i - \bar{y})^2}}
+\end{align*}
+
 \subsection{Regressionsrechnung}
 
 Es wird im Folgenden die ``Methode der kleinsten Quadrate'' angewendet:
 
 \begin{align*}
   & \bar{y} - a - b\bar{x} = 0 \\
-  & a\bar{x} + b\frac{1}{n} \sum x_i^2 = \frac{1}{n} \sum x_i y_i
+  & a\bar{x} + b\frac{1}{n} \sumin x_i^2 = \frac{1}{n} \sumin x_i y_i
 \end{align*}
 
 Resultate des aufgelösten Gleichungssystems für a und b:
