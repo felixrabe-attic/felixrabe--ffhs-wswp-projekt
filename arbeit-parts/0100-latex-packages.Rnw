@@ -25,3 +25,5 @@
 \usepackage[colorlinks,urlcolor=blue,linkcolor=black]{hyperref}
 
 \usepackage{graphicx}
+
+\usepackage[german]{varioref}
