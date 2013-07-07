@@ -5,7 +5,6 @@ Content
 -------
 
 - Actually calculate linear regression for total population graph
-- Label both lines on total world population graph
 - Compare energy consumption per capita among various countries
 - Good histogram
 - Weitere Statistik/Wahrscheinlichkeitsdaten ansehen. (Sponan fällt mir
@@ -13,6 +12,7 @@ Content
     Pro-Kopf-Verbrauch X beträgt, im Vergleich mit dem Quotient
     US-Pop/WORLD-Pop.)
 - Alternative world population graphs for comparison (google / images) because my graph does not look exponential at all
+- Refer to GitHub from PDF
 
 
 Keep in mind

@@ -19,7 +19,7 @@ Im betrachteten Zeitraum, besonders seit 1970, scheint sich ein ungefähr linear
 Zunächst wird überprüft, wie stark Jahr und Bevölkerung miteinander in Zusammenhang stehen. Das verdeutlicht die Korrelationsrechung.
 
 <<echo=FALSE, results='asis'>>=
-print(xtable(population_total_table, caption='Tabelle der ausgewerteten Beobachtungen, 1970 - 2009', digits=0), include.rownames=FALSE)
+print(xtable(population_total_table, caption='Tabelle der ausgewerteten Beobachtungen, 1970 - 2009', digits=0), include.rownames=FALSE, format.args = list(big.mark = "'"))
 @
 
 \subsection{Regressionsrechnung}
