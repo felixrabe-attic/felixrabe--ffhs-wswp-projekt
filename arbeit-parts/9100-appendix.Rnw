@@ -4,13 +4,21 @@
 
 \subsection{Bevölkerungszahlen}
 
-Quelle: \url{http://esa.un.org/wpp/Excel-Data/population.htm} \Rightarrow ``Annual Population by Age Groups''. United Nations, Department of Economic and Social Affairs, Population Division (2013). World Population Prospects: The 2012 Revision, CD-ROM Edition.
+Quelle: United Nations, Department of Economic and Social Affairs, Population Division (2013). World Population Prospects: The 2012 Revision, CD-ROM Edition.
 
-Unter \url{http://esa.un.org/wpp/index.htm} ist einsehbar, auf welchen Quellen die Bevölkerungszahlen im Detail beruhen.
+\url{http://esa.un.org/wpp/Excel-Data/population.htm} \Rightarrow ``Annual Population by Age Groups''.
+
+Unter \url{http://esa.un.org/wpp/index.htm} ist einsehbar, auf welchen Quellen die Bevölkerungszahlen im Detail beruhen. Es wurden die aktuellen, im Juni/Juli 2013 veröffentlichten, Daten verwendet.
 
 \subsection{Energiekonsum}
 
-Quelle: \url{http://www.bp.com/statisticalreview}
+Quelle: \url{http://www.bp.com/statisticalreview}. Es wurden die aktuellen, im Juni/Juli 2013 veröffentlichten, Daten verwendet.
+
+\subsection{Nachnamen der USA}
+
+Quelle: ``Genealogy Data: Frequently Occurring Surnames from Census 2000''.
+
+\url{http://www.census.gov/genealogy/www/data/2000surnames} \Rightarrow ``File B: Surnames Occurring 100 or more times''.
 
 \section{Interna}
 

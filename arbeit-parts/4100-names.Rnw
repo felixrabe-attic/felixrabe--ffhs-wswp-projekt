@@ -1,0 +1,11 @@
+\chapter{Nachnamen in den USA}
+
+\section{Einleitung}
+
+Die folgenden Auswertungen basieren auf den Nachnamen in den USA, die im Jahr 2000 mindestens 100 mal vorkamen.
+
+<<echo=FALSE, fig.height=5>>=
+source('./3110-names-top.R')
+
+print(names_top_table, include.rownames=FALSE)
+@
