@@ -1,31 +1,44 @@
-TODO
-====
+Bevölkerung und Energie
+=======================
 
-Content
--------
+Semesterarbeit WSWP, FFHS BSc INF 2011
+
+Felix Rabe
+
+8. Juli 2013
+
+
+Leitfaden zum Quellcode
+-----------------------
+
+Die Hauptdatei ist `arbeit.Rnw`.  Sie verweist (indirekt) auf alle Teile der Arbeit, lädt die verwendeten Daten, und führt die Berechnungen aus.
+
+Mit folgenden Befehlen lässt sich auf Mac OS X oder Linux die Datei `arbeit.pdf` generieren:
+
+    # Setzt eine LaTeX-Installation, sowie R und verwendete R-Pakete (siehe arbeit.pdf) voraus.
+
+    export LANG=en_US.UTF-8
+    export LANGUAGE=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
+
+    rm -f arbeit.aux arbeit.dvi arbeit.log arbeit.out arbeit.tex arbeit.toc
+    rm -f arbeit.pdf
+    Rscript -e "library(knitr); knit('arbeit.Rnw')"
+    lualatex -interaction=batchmode arbeit.tex
+    lualatex -interaction=batchmode arbeit.tex
+    lualatex -interaction=batchmode arbeit.tex
+    rm -f arbeit.aux arbeit.dvi arbeit.log arbeit.out arbeit.tex arbeit.toc
+
+
+TODO: Content
+-------------
 
 - Variationskoeffizient des Bevölkerungswachstums
-- Actually calculate linear regression for total population graph
 - Compare energy consumption per capita among various countries
-- Good histogram
-- Weitere Statistik/Wahrscheinlichkeitsdaten ansehen. (Sponan fällt mir
-    ein: Wie wahrscheinlich ist eine Person Amerikaner, wenn ihr
-    Pro-Kopf-Verbrauch X beträgt, im Vergleich mit dem Quotient
-    US-Pop/WORLD-Pop.)
-- Alternative world population graphs for comparison (google / images) because my graph does not look exponential at all
 
 
-Keep in mind
-------------
-
-- Consider leap years
-
-    Google: statistics leap year correction
-    => http://epp.eurostat.ec.europa.eu/portal/page/portal/national_accounts/documents/quarterly_accounts/SAWD_RECOMMENDATIONS.PDF
-
-
-Less important clean up tasks
------------------------------
+TODO: Less important clean up tasks
+-----------------------------------
 
 - Description for GitHub
 - Include build script (or "dump m")
