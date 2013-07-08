@@ -16,6 +16,7 @@
 \Sexpr{knit_child('arbeit-parts/2100-population.Rnw')}
 \Sexpr{knit_child('arbeit-parts/3100-energy.Rnw')}
 \Sexpr{knit_child('arbeit-parts/4100-names.Rnw')}
+\Sexpr{knit_child('arbeit-parts/5100-distributions.Rnw')}
 \Sexpr{knit_child('arbeit-parts/8100-results.Rnw')}
 \Sexpr{knit_child('arbeit-parts/9100-appendix.Rnw')}
 

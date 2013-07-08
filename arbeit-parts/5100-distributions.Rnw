@@ -1,0 +1,7 @@
+\chapter{Schliessende Statistik}
+
+\section{Rauchende Schweiz}
+
+Eine Google-Anfrage nach ``anteil raucher in der schweiz'' ergibt eine NZZ-Schlagzeile mit der Zahl 27\%.\footnote{http://www.nzz.ch/aktuell/startseite/27-prozent-der-schweizer-bevoelkerung-raucht-1.5968845}
+
+Angenommen, wir führen 1000 Befragungen durch, wobei 248 angeben, dass sie rauchen. Liegt die NZZ-Angabe von 27\% im Konfidenzintervall? Wir rechnen $\hat{p}$.
