@@ -4,6 +4,7 @@
 
 /arbeit.*
 !/arbeit.Rnw
+!/arbeit.pdf
 /energy/010-original-downloads
 !/energy/010-original-downloads/*.bz2
 /energy/050-aux
