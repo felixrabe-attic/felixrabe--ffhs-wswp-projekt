@@ -24,6 +24,6 @@ Quelle: ``Genealogy Data: Frequently Occurring Surnames from Census 2000''.
 
 Dieses Dokument wurde mit \LaTeX\,, Javascript und R erarbeitet: \verb|\Sexpr{version$version.string}|, \verb|\Sexpr{version$platform}|.
 
-Installierte R Pakete: ggplot2, knitr, reshape2, xtable.
+Installierte R Pakete: doBy, ggplot2, knitr, reshape2, xtable.
 
 Der vollständige Quellcode mit allen Datensätzen der vorliegenden Arbeit ist unter \url{https://github.com/felixrabe/ffhs-wswp-projekt} einsehbar.
