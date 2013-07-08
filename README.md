@@ -31,12 +31,7 @@ Mit folgenden Befehlen lässt sich auf Mac OS X oder Linux die Datei `arbeit.pdf
 TODO: Content
 -------------
 
+Kam nicht mehr dazu...
+
 - Variationskoeffizient des Bevölkerungswachstums
 - Compare energy consumption per capita among various countries
-
-
-TODO: Less important clean up tasks
------------------------------------
-
-- Description for GitHub
-- Include build script (or "dump m")
