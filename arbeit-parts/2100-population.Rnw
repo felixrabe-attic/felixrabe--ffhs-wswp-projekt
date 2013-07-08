@@ -109,5 +109,5 @@ Durchschnittliches jährliches Wachstum: \Sexpr{round(p_2000_to_2010_yearly_grow
 Kontrolle:
 
 $$
-\Sexpr{round(p_2000)} \cdot ( \frac{\Sexpr{round(p_2000_to_2010_yearly_growth, 8)}}{100} + 1 )^{10} = \Sexpr{round(p_2000 * (p_2000_to_2010_yearly_growth/100 + 1) ^ 10)}
+\Sexpr{f(p_2000)} \cdot ( \frac{\Sexpr{round(p_2000_to_2010_yearly_growth, 8)}}{100} + 1 )^{10} = \Sexpr{f(p_2000 * (p_2000_to_2010_yearly_growth/100 + 1) ^ 10)}
 $$
