@@ -16,4 +16,11 @@ Die Nachnamen können nun nach ihren Vorkommnissen pro Anfangsbuchstabe untersuc
 
 <<echo=FALSE, fig.height=4>>=
 names_top_plot
+names_top_by_letter_plot
+@
+
+Soweit die Idee. Nun das selbe mit der gesamten Tabelle, welche insgesamt etwas über 150'000 Einträge umfasst:
+
+<<echo=FALSE, fig.height=4>>=
+names_by_letter_plot
 @
