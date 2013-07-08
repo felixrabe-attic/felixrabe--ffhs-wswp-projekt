@@ -37,18 +37,17 @@ source('./4120-names-prob.R')
 % Die Wahrscheinlichkeit $P(A)$, dass ein Amerikaner ``Smith'' heisst, beträgt:
 
 \begin{align*}
-  \Omega      &= \text{Ergebnisraum, Weltbevölkerung (jede Person ist ein Elementarereignis)} \\
+  \Omega      &\defeq \text{Ergebnisraum, Weltbevölkerung (jede Person ist ein Elementarereignis)} \\
   |\Omega|    &= \Sexpr{f(prob_omega)} \\
-  B           &= \text{Jemand ist Amerikaner} \\
+  B           &\defeq \text{ist Amerikaner} \\
   |B|         &= \Sexpr{f(prob_b)} \\
   P(B)        &= \frac{|B|}{|\Omega|} = \Sexpr{prob_b / prob_omega} \\
-  A           &= \text{Jemand heisst ``Smith''} \\
-  A \cap B    &= \text{Jemand heisst ``Smith'' und ist Amerikaner} \\
+  A           &\defeq \text{heisst ``Smith''} \\
+  A \cap B    &= \text{heisst ``Smith'' und ist Amerikaner} \\
   |A \cap B|  &= \Sexpr{f(prob_a_cap_b)} \\
   P(A \cap B) &= \frac{|A \cap B|}{|\Omega|} = \Sexpr{prob_a_cap_b / prob_omega} \\
-  A|B         &= \text{Ein Amerikaner heisst ``Smith''} \\
-  P(A|B)      &= \frac{P(A \cap B)}{P(B)} = \Sexpr{prob_a_cap_b / prob_b} \\
-  P(A \cap B) &= \text{Jemand heisst ``Smith'' und ist Amerikaner}
+  P(A|B)      &= \text{Wahrscheinlichkeit, dass ein Amerikaner ``Smith'' heisst} \\
+  P(A|B)      &= \frac{P(A \cap B)}{P(B)} = \Sexpr{prob_a_cap_b / prob_b}
 \end{align*}
 
 Da die Ereignisse $A$ und $B$ abhängig sind ($A$ unterscheidet sich je nach Land), gilt nicht (zwingend): $P(A \cap B) = P(A) \cdot P(B)$.
