@@ -19,8 +19,10 @@ names_top_plot
 names_top_by_letter_plot
 @
 
-Soweit die Idee. Nun das selbe mit der gesamten Tabelle, welche insgesamt etwas über 150'000 Einträge umfasst:
+Soweit die Idee. Nun das selbe mit der gesamten Tabelle, welche insgesamt \Sexpr{f(nrow(usnames))} Einträge umfasst:
 
 <<echo=FALSE, fig.height=4>>=
 names_by_letter_plot
 @
+
+Anhand der Histogrammflächen lässt sich nun ablesen, wie häufig ein bestimmter Buchstabe den Anfang eines amerikanischen Nachnamens bildet.

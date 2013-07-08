@@ -9,9 +9,10 @@ names_top_table <- xtable(ntab_display, caption='Top 10 US-Namen im Jahr 2000.',
 # http://www.slideshare.net/jeffreybreen/grouping-summarizing-data-in-r
 
 np <- ggplot(ntab_head, aes(name, count))
-np <- np + geom_bar(stat = 'identity', position = 'identity', color = 'black', fill = NA)
+np <- np + geom_histogram(aes(width = 1), stat = 'identity', position = 'identity', color = 'black', fill = NA)
 np <- np + labs(x = 'Nachname', y = 'Vorkommnisse')
 np <- np + theme(axis.text.x = element_text(angle=90, vjust=1))
+np <- np + scale_y_continuous(label = f)
 np -> names_top_plot
 
 first_letter <- function(x) { substr(x, 0, 1) }
@@ -28,6 +29,7 @@ prepare_plot <- function(data) {
   np <- np + labs(x = 'Anfangsbuchstabe des Nachnamens', y = 'Klassendichte')
   np <- np + theme(panel.grid.minor = element_blank())
   np <- np + scale_x_continuous(breaks = d3$x, labels = d3$name)
+  np <- np + scale_y_continuous(label = f)
   np
 }
 
