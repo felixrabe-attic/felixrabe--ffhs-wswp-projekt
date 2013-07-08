@@ -29,5 +29,6 @@ source('./5110-distribution-calculations.R')
   \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} &= \sqrt{\frac{\Sexpr{p_x * (1 - p_x)}}{\Sexpr{n}}} = \Sexpr{sqrt_p} \\
   c       &= \frac{k}{\sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}} = \frac{\Sexpr{k}}{\Sexpr{sqrt_p}} = \Sexpr{k / sqrt_p} \\
   \Phi(c) &= 1 - \frac{\alpha}{2} \\
-  \alpha  &= 2 - 2 \cdot \Phi(c)
+  \alpha  &= 2 - 2 \Phi(c) \\
+  1 - \alpha &= 2 \Phi(c) - 1
 \end{align*}

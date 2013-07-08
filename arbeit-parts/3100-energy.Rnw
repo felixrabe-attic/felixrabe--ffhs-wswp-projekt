@@ -7,3 +7,5 @@ source('./3110-energy-us.R')
 
 pc_us_plot
 @
+
+Der Graph zeigt uns, wie seit den 70er-Jahren der Pro-Kopf-Energiekonsum in den USA gar rückläufig ist.
