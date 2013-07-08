@@ -11,13 +11,7 @@ Angenommen, wir führen 1000 Befragungen durch, wobei 248 angeben, dass sie rauc
 Gesucht: $1 - \alpha$.
 
 <<echo=FALSE>>=
-x <- 248
-a <- 270
-n <- 1000
-p_x <- x / n
-p_a <- a / n
-k <- (a-x) / n
-sqrt_p <- sqrt(p_x * (1 - p_x) / n)
+source('./5110-distribution-calculations.R')
 @
 
 \begin{align*}
@@ -27,8 +21,11 @@ sqrt_p <- sqrt(p_x * (1 - p_x) / n)
   X       &= \Sexpr{x} \\
   \hat{p} &= \frac{X}{n} = \frac{\Sexpr{x}}{\Sexpr{n}} = \Sexpr{p_x} \\
   p       &= \frac{|A|}{n} = \frac{\Sexpr{a}}{\Sexpr{n}} = \Sexpr{p_a} \\
-  k       &= p - \hat{p} = \frac{|A| - X}{n} = \frac{\Sexpr{a - x}}{\Sexpr{n}} = \Sexpr{k} \\
-  k       &= c \cdot \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} \\
+  k       &= p - \hat{p} = \frac{|A| - X}{n} = \frac{\Sexpr{a - x}}{\Sexpr{n}} = \Sexpr{k}
+\end{align*}
+
+\begin{align*}
+  k       &= \Sexpr{k} = c \cdot \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} \\
   \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} &= \sqrt{\frac{\Sexpr{p_x * (1 - p_x)}}{\Sexpr{n}}} = \sqrt{\Sexpr{p_x * (1 - p_x) / n}} = \Sexpr{sqrt_p} \\
-  c       &= \frac{k}{\sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}} = \frac{\Sexpr{k}}{\Sexpr{sqrt_p}} = \Sexpr{k / sqrt_p} \\
+  c       &= \frac{k}{\sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}} = \frac{\Sexpr{k}}{\Sexpr{sqrt_p}} = \Sexpr{k / sqrt_p}
 \end{align*}
