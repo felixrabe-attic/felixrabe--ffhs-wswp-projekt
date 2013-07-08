@@ -26,3 +26,15 @@ names_by_letter_plot
 @
 
 Anhand der Histogrammflächen lässt sich nun ablesen, wie häufig ein bestimmter Buchstabe den Anfang eines amerikanischen Nachnamens bildet.
+
+\section{Wahrscheinlichkeiten}
+
+Die Wahrscheinlichkeit $P(A)$, dass ein Amerikaner ``Smith'' heisst, beträgt:
+
+\begin{align*}
+  \Omega &\defeq \text{Ergebnisraum, Weltbevölkerung (jede Person ist ein Elementarereignis)} \\
+  P(A) &\defeq \text{Jemand heisst ``Smith''} \\
+  P(A|B) &\defeq \text{Jemand heisst ``Smith'' unter der Voraussetzung, dass er Amerikaner ist} \\
+  P(B) &\defeq \text{Jemand ist Amerikaner} \\
+  P(A \cap B) &\defeq \text{Jemand heisst ``Smith'' und ist Amerikaner}
+\end{align*}

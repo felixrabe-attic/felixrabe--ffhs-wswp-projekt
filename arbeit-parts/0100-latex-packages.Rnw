@@ -10,6 +10,8 @@
 }
 
 \usepackage{mathtools}
+% http://tex.stackexchange.com/a/28840
+\newcommand{\defeq}{\vcentcolon=}
 
 \usepackage{fontspec}
 % Ligatures: http://tex.stackexchange.com/a/37856
