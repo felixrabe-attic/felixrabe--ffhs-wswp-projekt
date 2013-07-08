@@ -19,7 +19,11 @@ names_top_plot
 names_top_by_letter_plot
 @
 
-Soweit die Idee. Nun das selbe mit der gesamten Tabelle, welche insgesamt \Sexpr{f(nrow(usnames))} Einträge umfasst:
+Soweit die Idee.
+
+\section{Histogramm über den gesamten Datensatz}
+
+Nun das selbe mit der gesamten Tabelle, welche insgesamt \Sexpr{f(nrow(usnames))} Einträge umfasst:
 
 <<echo=FALSE, fig.height=4>>=
 names_by_letter_plot
@@ -52,4 +56,4 @@ Mit den Bevölkerungszahlen und der US-Namensliste aus 2000 lassen sich nun folg
   P(A|B)      &= \frac{P(A \cap B)}{P(B)} = \Sexpr{prob_a_cap_b / prob_b}
 \end{align*}
 
-Da die Ereignisse $A$ und $B$ abhängig sind ($A$ unterscheidet sich je nach Land), gilt nicht (zwingend): $P(A \cap B) = P(A) \cdot P(B)$.
+Da die Ereignisse $A$ und $B$ abhängig sind ($A$ unterscheidet sich je nach Land), gilt nicht (zwingend): $P(A \cap B) = P(A) \cdot P(B)$. Somit sind weitere Resultate wie beispielsweise $P(A)$ und $P(B|A)$ nicht rechenbar, da die verwendeten Daten keine Informationen zum Auftreten des Namens ``Smith'' ausserhalb der USA enthalten.
