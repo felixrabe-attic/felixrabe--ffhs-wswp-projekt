@@ -2,7 +2,7 @@
 
 \section{Rauchende Schweiz}
 
-Eine Google-Anfrage nach ``anteil raucher in der schweiz'' ergibt eine NZZ-Schlagzeile mit der Zahl 27\%.\footnote{http://www.nzz.ch/aktuell/startseite/27-prozent-der-schweizer-bevoelkerung-raucht-1.5968845}
+Eine Google-Anfrage nach ``anteil raucher in der schweiz'' ergibt eine NZZ-Schlagzeile mit der Zahl 27\%.\footnote{\url{http://www.nzz.ch/aktuell/startseite/27-prozent-der-schweizer-bevoelkerung-raucht-1.5968845}}
 
 Angenommen, wir führen 1000 Befragungen durch, wobei 248 angeben, dass sie rauchen. Bei welchem Vertrauensniveau liegt die NZZ-Angabe von 27\% gerade noch im Konfidenzintervall? Je kleiner das Vertrauensniveau, umso repräsentativer war die Umfrage.
 
