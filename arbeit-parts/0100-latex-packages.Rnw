@@ -19,6 +19,8 @@
 
 \parskip 3pt
 \setlength{\parindent}{0pt}
+\setlength{\mathindent}{0pt}
+\addtolength{\jot}{1pt}
 
 \pagestyle{headings}
 
