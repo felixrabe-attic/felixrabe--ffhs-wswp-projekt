@@ -4,4 +4,26 @@
 
 Eine Google-Anfrage nach ``anteil raucher in der schweiz'' ergibt eine NZZ-Schlagzeile mit der Zahl 27\%.\footnote{http://www.nzz.ch/aktuell/startseite/27-prozent-der-schweizer-bevoelkerung-raucht-1.5968845}
 
-Angenommen, wir führen 1000 Befragungen durch, wobei 248 angeben, dass sie rauchen. Liegt die NZZ-Angabe von 27\% im Konfidenzintervall? Wir rechnen $\hat{p}$.
+Angenommen, wir führen 1000 Befragungen durch, wobei 248 angeben, dass sie rauchen. Bei welchem Vertrauensniveau liegt die NZZ-Angabe von 27\% gerade noch im Konfidenzintervall? Je kleiner das Vertrauensniveau, umso repräsentativer war die Umfrage.
+
+\section{Berechnungen Konfidenzintervall}
+
+Gesucht: $1 - \alpha$.
+
+<<echo=FALSE>>=
+x <- 248
+a <- 270
+n <- 1000
+p_x <- x / n
+p_a <- a / n
+@
+
+\begin{align*}
+  n       &= |\Omega| = \Sexpr{n} \\
+  A       &\defeq \text{Person ist Raucher} \\
+  |A|     &= \Sexpr{a} \\
+  X       &= \Sexpr{x} \\
+  \hat{p} &= \frac{X}{n} = \frac{\Sexpr{x}}{\Sexpr{n}} = \Sexpr{p_x} \\
+  p       &= \frac{|A|}{n} = \frac{\Sexpr{a}}{\Sexpr{n}} = \Sexpr{p_a} \\
+  k       &= p - \hat{p} = \frac{|A| - X}{n} = \frac{\Sexpr{a - x}}{\Sexpr{n}} = \Sexpr{(a-x) / n}
+\end{align*}
