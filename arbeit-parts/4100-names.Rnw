@@ -9,3 +9,11 @@ source('./4110-names-top.R')
 
 print(names_top_table, include.rownames=FALSE)
 @
+
+\section{Histogramm über Top-10}
+
+Die Nachnamen können nun nach ihren Vorkommnissen pro Anfangsbuchstabe untersucht werden. Zunächst werden die Top-10 gerechnet, um das Vorgehen zu erläutern und zu verifizieren, im nächsten Abschnitt werden dann alle Vorkommnisse gerechnet.
+
+<<echo=FALSE, fig.height=4>>=
+names_top_plot
+@
