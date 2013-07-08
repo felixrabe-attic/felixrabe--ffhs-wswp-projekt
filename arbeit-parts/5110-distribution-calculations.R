@@ -5,3 +5,4 @@ p_x <- x / n
 p_a <- a / n
 k <- (a-x) / n
 sqrt_p <- sqrt(p_x * (1 - p_x) / n)
+cc <- k / sqrt_p

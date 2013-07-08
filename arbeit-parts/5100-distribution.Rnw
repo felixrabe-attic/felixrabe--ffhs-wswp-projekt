@@ -27,8 +27,10 @@ source('./5110-distribution-calculations.R')
 \begin{align*}
   k       &= \Sexpr{k} = c \cdot \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} \\
   \sqrt{\frac{\hat{p} (1 - \hat{p})}{n}} &= \sqrt{\frac{\Sexpr{p_x * (1 - p_x)}}{\Sexpr{n}}} = \Sexpr{sqrt_p} \\
-  c       &= \frac{k}{\sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}} = \frac{\Sexpr{k}}{\Sexpr{sqrt_p}} = \Sexpr{k / sqrt_p} \\
+  c       &= \frac{k}{\sqrt{\frac{\hat{p} (1 - \hat{p})}{n}}} = \frac{\Sexpr{k}}{\Sexpr{sqrt_p}} = \Sexpr{cc} \\
   \Phi(c) &= 1 - \frac{\alpha}{2} \\
   \alpha  &= 2 - 2 \Phi(c) \\
-  1 - \alpha &= 2 \Phi(c) - 1
+  1 - \alpha &= 2 \Phi(c) - 1 = 2 \Phi(\Sexpr{cc}) - 1 = 2 \cdot \Sexpr{pnorm(cc)} - 1 = \Sexpr{2 * pnorm(cc) - 1}
 \end{align*}
+
+Die Befragung war also durchaus repräsentativ, der Wert $\hat{p}$ lag innerhalb des 90\%-Vertrauensintervalls von $p$.
