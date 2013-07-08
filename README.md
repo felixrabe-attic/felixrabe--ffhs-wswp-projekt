@@ -1,11 +1,9 @@
 Bevölkerung und Energie
 =======================
 
-Semesterarbeit WSWP, FFHS BSc INF 2011
+Semesterarbeit WSWP, FFHS BSc INF 2011.
 
-Felix Rabe
-
-8. Juli 2013
+Felix Rabe, 8. Juli 2013.
 
 
 Leitfaden zum Quellcode
