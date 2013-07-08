@@ -36,6 +36,8 @@ source('./4120-names-prob.R')
 
 % Die Wahrscheinlichkeit $P(A)$, dass ein Amerikaner ``Smith'' heisst, beträgt:
 
+Mit den Bevölkerungszahlen und der US-Namensliste aus 2000 lassen sich nun folgende Berechnungen anstellen:
+
 \begin{align*}
   \Omega      &\defeq \text{Ergebnisraum, Weltbevölkerung (jede Person ist ein Elementarereignis)} \\
   |\Omega|    &= \Sexpr{f(prob_omega)} \\
